@@ -8,7 +8,7 @@ ver.20250306-01 / Jason Feng <solidzoro@live.com> / init
 
 ## \_\_通用\_\_ (\_\_common\_\_)
 
-### prettie
+### prettier
 
 遵循 `.prettierrc.cjs`（注意是 `.cjs`，避免项目 `package.json` 申明
 `"type": "module"` 时 `.js` 被忽略）
@@ -28,7 +28,7 @@ module.exports = {
 项目不同，有不同的配置，尽可能统一，如因团队人员出现分歧，以 [airbnb](https://github.com/airbnb/javascript)
 的约定为准，保持深思熟虑。团队磨合达到 stable 稳定后，在这个项目的 sample 里维护一份。
 
-config 不做 `extends`， 不做 `file-share`，需要手动 copy config 到项目使用。
+config 不做 `extends`， 不做 `file-sharing`，需要手动 copy config 到项目使用。
 
 eslint config sample
 文件在这里： [eslint.config.mjs](_config-sample/eslint.config.mjs) 。
@@ -37,7 +37,7 @@ eslint config sample
 
 #### 全局 types
 
-放在 `/typings` 里，命名例子 `global-type.d.ts`,
+放在 `/types` 里，命名例子 `global-type.d.ts`,
 
 #### 局部 types
 
@@ -52,7 +52,7 @@ interface IAbc {
 type IXyz = {};
 
 enum OrderStatus {
-  padding = 1,
+  pending = 1,
   error = -1,
 }
 ```
@@ -140,10 +140,10 @@ env 字段必须使用框架名开头，比如 `VITE_`，确保只有此开头�
 
 ## 通用部分
 
-### typs
+### types
 
 ```
-__如果是对接 后台 api 的，直接使用脚本转换后的 tyoes，脚本一键生成__
+__如果是对接 后台 api 的，直接使用脚本转换后的 types，脚本一键生成__
 ```
 
 目录约定:
